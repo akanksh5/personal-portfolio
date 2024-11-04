@@ -1,13 +1,14 @@
 import React from 'react';
+import './Contact.css';
 
 function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out via the form below or through my social profiles!</p>
-      
+      <p>Feel free to reach out via the form below or connect with me on social media!</p>
+
       {/* Contact Form */}
-      <form>
+      <form className="contact-form">
         <label>
           Name:
           <input type="text" name="name" required />
@@ -18,11 +19,11 @@ function Contact() {
         </label>
         <label>
           Message:
-          <textarea name="message" required></textarea>
+          <textarea name="message" rows="4" required></textarea>
         </label>
         <button type="submit">Send</button>
       </form>
-      
+
       {/* Social Links */}
       <div className="social-links">
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
